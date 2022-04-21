@@ -6,8 +6,8 @@
   <div class="controls">
     <span>{{currentSong.title}}</span>
     <div class="control-button">
-      <fa-icon [icon]="backSongIcon" (click)="previousSong()"></fa-icon>
-      <fa-icon [icon]="nextSongIcon" (click)="nextSong()"></fa-icon>
+      <fa-icon [icon]="backSongIcon" class="prev-song" (click)="previousSong()"></fa-icon>
+      <fa-icon [icon]="nextSongIcon" class="next-song" (click)="nextSong()"></fa-icon>
     </div>
   </div>
 </div>
