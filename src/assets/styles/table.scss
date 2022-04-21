@@ -1,0 +1,74 @@
+@import 'variables';
+
+.table {
+  width: 100%;
+  text-align: left;
+  table-layout: fixed;
+  border-collapse: collapse;
+
+  .play {
+    color: $primary-color;
+    font-size: .8rem;
+  }
+
+  .executing {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 0 15px $dark-transparent-30;
+
+    td {
+      color: $primary-color;
+    }
+  }
+
+  thead th {
+    font-size: .81rem;
+    font-weight: 600;
+    color: $dark-transparent-30;
+  }
+
+  th, td {
+    padding-right: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:nth-child(1) {
+      padding-left: .6rem;
+    }
+  }
+
+  tr {
+    &:hover {
+      cursor: pointer;
+      td {
+        color: $primary-color;
+      }
+    }
+
+    td {
+      padding: 1rem 2rem 1rem 0;
+      margin-top: 1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      color: $dark-transparent-70;
+
+      &:nth-child(1) {
+        padding-left: .6rem;
+      }
+    }
+  }
+
+  .w {
+    @for $i from 1 to 10 {
+      $width: $i * 5;
+      &-#{$width} {
+        width: #{$width * 1%};
+      }
+    }
+  }
+
+  .right {
+    text-align: right;
+  }
+}

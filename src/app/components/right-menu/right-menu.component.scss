@@ -1,0 +1,15 @@
+@import 'variables';
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
+  max-width: 24rem;
+  width: 100%;
+  padding: 2rem;
+
+  .player {
+    height: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+<button
+  type="button"
+  [class.is-selected]="isSelected"
+  (click)="onClick()"
+>
+  <ng-content></ng-content>
+  <span>
+    {{title}}
+  </span>
+</button>

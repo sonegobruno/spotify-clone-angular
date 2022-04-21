@@ -1,0 +1,13 @@
+<div class="container card p-10">
+  <div
+    class="image"
+    [style.background-image]="'url('+ currentSong.album.imageUrl +')'"
+  ></div>
+  <div class="controls">
+    <span>{{currentSong.title}}</span>
+    <div class="control-button">
+      <fa-icon [icon]="backSongIcon" (click)="previousSong()"></fa-icon>
+      <fa-icon [icon]="nextSongIcon" (click)="nextSong()"></fa-icon>
+    </div>
+  </div>
+</div>

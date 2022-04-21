@@ -1,0 +1,8 @@
+<span class="title-md">Top 5 artistas</span>
+<app-top-artist-card
+*ngFor="let artist of artists"
+[avatarImg]="artist.avatarUrl"
+class="d-block mt-1"
+>
+  {{artist.name}}
+</app-top-artist-card>

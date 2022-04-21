@@ -1,0 +1,30 @@
+@import 'variables';
+
+footer {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 3rem;
+  color: $primary-color;
+  border-top: 1px solid $dark-transparent-20;
+
+  img {
+    flex-grow: 0;
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  span {
+    flex-grow: 1;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .icon {
+    flex-grow: 0;
+    cursor: pointer;
+  }
+}

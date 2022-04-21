@@ -1,0 +1,5 @@
+<footer class="flex">
+  <img [src]="user.avatarUrl" alt="Imagem de perfil do usuário">
+  <span>{{user.name}}</span>
+  <fa-icon [icon]="signOutIcon" class="icon" (click)="logout()"></fa-icon>
+</footer>

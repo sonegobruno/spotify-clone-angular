@@ -1,1 +1,87 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import 'variables.scss';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: $background-color;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 1080px) {
+    & {
+      font-size: 58%;
+    }
+  }
+
+  @media (max-width: 720px) {
+    & {
+      font-size: 54%;
+    }
+  }
+}
+
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+
+  &-center {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.title {
+  color: $primary-color;
+  display: block;
+  font-weight: 700;
+
+  &-bg {
+    @extend .title;
+    font-size: 2.8rem;
+  }
+
+  &-md {
+    @extend .title;
+    font-size: 2rem;
+  }
+}
+
+.mt {
+  @for $i from 1 to 10 {
+    &-#{$i} {
+      margin-top: #{$i}vh;
+    }
+  }
+}
+
+.p-20 {
+  padding: 2rem;
+}
+
+.card {
+  box-shadow: 0 0 15px $dark-transparent-03;
+  background-color: #fff;
+  border-radius: 10px;
+}
+

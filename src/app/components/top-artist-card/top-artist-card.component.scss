@@ -1,0 +1,30 @@
+@import 'variables';
+
+.container{
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+
+  &:hover {
+    background: #fff;
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    flex-grow: 0;
+  }
+
+  span {
+    color: $dark-transparent-70;
+    flex-grow: 1;
+    margin-left: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

@@ -1,0 +1,37 @@
+@import 'table';
+@import 'variables';
+
+:host {
+  display: flex;
+  justify-content: space-between;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+
+    &-thumb {
+      background: rgba($primary-color, 20%);
+      border-radius: 10px;
+    }
+
+    &-track {
+      background: transparent;
+    }
+  }
+
+  .my-music {
+    padding: 0 5rem;
+    padding-bottom: 2rem;
+
+    width: 100%;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+
+  .d-block {
+    display: block;
+  }
+
+  .right-menu {
+    height: 100vh;
+  }
+}
